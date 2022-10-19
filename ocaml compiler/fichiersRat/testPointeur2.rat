@@ -1,0 +1,14 @@
+typedef Pint = int;
+test{
+  
+  Pint *a= (new int);
+  int * b= (new Pint);
+  Pint * c= (new Pint);
+  int k=5;
+  (*c)=3;
+  a=&k;
+  (*b)=4;
+  (*a)+=((*c)+(*b));
+  print (*a);
+  print k;
+}

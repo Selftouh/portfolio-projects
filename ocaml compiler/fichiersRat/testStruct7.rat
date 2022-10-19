@@ -1,0 +1,47 @@
+  typedef S1=struct {int* a int* b};
+
+S1 add(S1 str){
+  int* r1=(new int);
+  int* r2=(new int);
+  (*r1)=((*(str.a))+(*(str.b)));
+  (*r2)=(1+((*(str.a))+(*(str.b))));
+  S1 re={r1 r2};
+  return re;
+}
+
+
+S1* addp(S1 str){
+  S1* res=(new S1);
+(*res)=call add (str);
+ 
+
+  return res;
+}
+
+
+int aff(S1 res){
+  print (2);
+   print (*(res.a));
+   print (*(res.b));
+    print (1);
+    return 0;
+}
+
+
+test{
+
+  
+  int* p1 = (new int);
+  int* p2 = (new int);
+  int k=6;
+  int j=1;
+  p1=&k;
+  p2=&j;
+
+  S1 res=call add ({p1 p2});
+  S1* res2=call addp ({(&j) (&k)});
+int unused= call aff (res);
+int unused2= call aff ((*res2));
+
+  
+}

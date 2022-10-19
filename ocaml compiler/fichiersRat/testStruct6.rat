@@ -1,0 +1,30 @@
+  typedef S1=struct {int c S1* b};
+   typedef S2=struct {int h S1* j};
+
+int aff(S2 str){
+print ((*(str.j)).h);
+return 0;
+}
+
+
+test{
+
+  
+  S1 p1 = {3 null};
+  S2 p2 = {2 (&p1)};
+  
+struct {int a int d} p3 = {1 30};
+
+  print ((*(p2.b)).c);
+  (p3.a)+=79;
+   print (p3.a);
+   (p1.c)=7;
+   print (p1.c);
+   ((*(p2.b)).c)+=5;
+   
+   int unused= call aff (p2);
+   print ((*(p2.b)).c);
+   print (p1.c);
+  
+  
+}

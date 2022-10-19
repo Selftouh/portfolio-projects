@@ -1,0 +1,16 @@
+
+
+int add (struct{int m int n} d){
+  return ((d.n)+(d.m));
+}
+
+test{
+
+  struct{int m int n} l = {3 2};
+  
+print (l.n) ;
+  print call add (l) ;
+  
+  
+  
+}

@@ -1,0 +1,13 @@
+
+test{
+  typedef S1=struct {int a S1* b};
+  S1 p1 = {1 null};
+  S1 p2 = {2 (&p1)};
+  S1 p3 = {3 (&p2)};
+  S1 p4 = {4 (&p3)};
+  print (p4.a);
+  print ((*(p2.b)).a);
+   print ((*(p3.b)).a);
+   print ((*((*((*(p4.b)).b)).b)).a);
+  
+}

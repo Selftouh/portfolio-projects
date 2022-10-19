@@ -1,0 +1,15 @@
+typedef Pin = int ;
+typedef Pint = Pin ;
+
+Pint add (Pin a){
+  typedef Ppint =int ;
+  Ppint x=10;
+  return (a+x);
+  }
+
+test{
+  typedef Pint = Pin ;
+  typedef Pintt = Pint ;
+  Pintt x = 3;
+  print call add (x) ;
+}

@@ -1,0 +1,19 @@
+int add (int a){
+  int c = 1;
+  c +=  a;
+  return c;}
+
+test{
+  int x = 3;
+  const y = 5;
+  int a = call add (3);
+  if(x<0){
+    
+    x += 4;
+  }else{
+    rat x = [4/3];
+    x += [a/y];
+    print x;
+  }
+  print x;
+}

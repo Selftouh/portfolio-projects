@@ -1,0 +1,45 @@
+typedef Pin = int ;
+typedef Pint = Pin ;
+
+
+
+Pint addIncr (Pin a  Pint b){
+  typedef Ppint =int ;
+  Ppint x=1;
+  return (a+(b+x));
+  }
+
+
+typedef Pbool = bool ;
+typedef Prat = rat ;
+
+test{
+  typedef Pint = Pin ;
+  typedef Pintt = Pint ;
+  
+  typedef PPrat =Prat;
+
+  typedef PPbool=Pbool;
+
+  Pintt a=2;
+  Pin b=3;
+  PPbool c=true;
+  
+  if (c) {
+    if (a<b) {
+        print call addIncr (a b);
+    } else {
+      print 1;
+    }
+  } else {
+    print 1;
+  }
+  Pint x = 3;
+  PPrat r1=[x/b];
+  rat r2 = [1/a];
+  Prat r3= r2;
+  r3=r1;
+
+  print (r1+r2);
+  print (r2+[num r3 / denom r3]);
+}

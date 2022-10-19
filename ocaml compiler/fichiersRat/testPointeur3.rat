@@ -1,0 +1,29 @@
+typedef Pint = int;
+typedef Prat=rat;
+test{
+  
+  Pint *a= (new int);
+  int * b= (new Pint);
+  Pint * c= (new Pint);
+  Prat * r1=(new rat);
+  rat * r2= (new Prat);
+
+  Prat r3=[2/12];
+  int k=5;
+
+  (*c)=3;
+  a=&k;
+  (*b)=4;
+
+  (*a)+=((*c)+(*b));
+
+
+  (*r1)=[(*a)/k];
+  print (*r1);
+  
+  r2=&r3;
+  print (*r2);
+
+  (*r2)+=((*r1)+[num (*r2)/12]);
+  print (*r2);
+}

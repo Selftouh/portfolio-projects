@@ -1,0 +1,10 @@
+
+test{
+  
+  struct {int a rat b int d rat c} p = {1 [1/2] 2 [1/3]};
+
+  print (p.a);
+  print (p.b);
+  print (p.d);
+  print (p.c);
+}

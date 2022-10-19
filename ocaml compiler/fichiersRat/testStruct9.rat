@@ -1,0 +1,18 @@
+  typedef S1=struct {int a int b};
+    typedef S2=struct {int c S1 d};
+
+
+
+
+test{
+
+  
+
+
+  S1 res={1 2};
+S2 res2={4 res};
+print ((res2.d).a);
+print ((res2.d).b);
+
+  
+}

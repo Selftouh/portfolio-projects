@@ -1,0 +1,25 @@
+typedef S1 = struct { int a rat r int b};
+
+
+
+rat addr (S1 d){
+  return ((d.r)+[(d.a)/(d.b)]);
+}
+rat addr2 (struct { int a rat r int b} d){
+  return ((d.r)+[(d.a)/(d.b)]);
+}
+
+test{
+  typedef S2 = struct { int a2 rat r2 int b2};
+
+  S1 e ={2 [1/1] 100};
+  print call addr (e) ;
+  print call addr ({1 [1/1] 50}) ;
+
+  print call addr2 (e) ;
+  print call addr2 ({2 [2/2] 100}) ;
+  
+  S2 e2 ={4 [3/3] 200};
+  print call addr2 (e2) ;
+  
+}
